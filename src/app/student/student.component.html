@@ -1,0 +1,66 @@
+
+<div class="container-fluid">
+    <div class="row" style="padding:50px;" >
+        
+        <div class="col-md-4 cssForAddCard"
+           (click)="addStudentDiv()"
+           [hidden]="toHideDiv"
+         id="cardForHover" 
+        
+         >
+
+        <div class="card card-body-add" >
+            <img  
+            src="/assets/images/addStudentDetails(1).png" 
+            alt="addStudentDetailsLogo"
+            class="addStudentImage"
+            >
+
+            <div class="card-body ">
+                <h5 class="card-title">Add Student Details</h5>
+                <p class="card-text">To Add Details Of A New Student</p>
+                <button class="btn btn-dark">add</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 toVisibleFeature"
+        (click)="modifyStudentDiv()"
+        [hidden]="toHideDiv"
+         id="cardForHover" >
+        <div class="card" style="padding: 10px;">
+            <img 
+            src="/assets/images/modifyDetails(1).png" 
+            alt="addStudentDetailsLogo"
+            class="modifyStudentImage"
+            >
+            <div class="card-body">
+                <h5 class="card-title">Modify</h5>
+                <p class="card-text">To Modify Existed Student Details</p>
+                <button class="btn btn-dark">Modify</button>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-4 toVisibleFeature" 
+        (click)="removeStudentDiv()"
+         id="cardForHover"
+         [hidden]="toHideDiv"
+         >
+        <div class="card" style="padding: 10px;">
+            <img 
+            src="/assets/images/addStudentDetails(11) .png" 
+            alt="addStudentDetailsLogo"
+            class="removeStudentImage">
+            <div class="card-body ">
+                <h5 class="card-title">Remove</h5>
+                <p class="card-text">To Remove Student Details</p>
+                <button class="btn btn-dark">Remove</button>
+            </div>
+        
+    </div>
+</div>
+    </div>
+</div>
+<app-add *ngIf="addStudentCard===true"></app-add>
+<app-modify *ngIf="modifyStudentCard===true"></app-modify>
+<app-remove *ngIf="removeStudentCard===true"></app-remove>

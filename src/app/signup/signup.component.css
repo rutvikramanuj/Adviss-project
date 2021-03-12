@@ -1,0 +1,28 @@
+
+.p{
+    color: blue;
+}
+.row-right{
+    
+}
+.advissColumn{
+    text-align: center;
+    margin: 300px 100px ;
+    
+}
+.mainAdviss{
+    background-color:rgb(197, 197, 197);
+}
+.advissTitle{
+    
+    /* text-align: center; */
+}
+.male{
+    padding-right: 34px;
+}
+.gender{
+    padding-top:15px;
+}
+.row-right{
+    margin-top:100px;
+}

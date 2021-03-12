@@ -1,0 +1,48 @@
+#div_for_ADVISS{
+    /* background-image:url("/assets/images/background.jpg"); */
+    background-color: #f2f2f2;
+    
+}
+#div_for_DEV{
+   /* background-color: #d9d9d9;  */
+    /* background-image:url("/assets/images/avipatel.png"); */
+    padding: 150px;
+   
+}
+.advissSpan{
+    font-size:25px;
+}
+#adviss-row{
+    margin-top:50px;
+   
+}
+#dev-row{
+    margin-top:100px;
+    margin-left:300px;
+}
+.devlopers{
+    text-align: center;
+        
+}
+.devImg{
+    
+    text-align:center;
+    margin:20px;
+}
+.hr{
+    
+    
+   height:1px;
+   
+   text-align:center;
+   border-width:0;
+   background-color:gray;
+}
+.intro{
+    text-align:center;
+    padding:5px 30px;
+}
+.introLine{
+    text-align:center;
+    padding-bottom:3px;
+}

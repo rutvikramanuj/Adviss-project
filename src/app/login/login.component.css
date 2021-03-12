@@ -1,0 +1,24 @@
+#col-md-id{
+    margin-top: 20%;
+    padding-left: 35%;
+    
+}
+#signIn-button{
+    width: 270px;
+    background-color: red;
+}
+.advissColumn{
+    text-align: center;
+    margin: 300px 100px ;
+}
+.advissTitle{
+    
+    /* text-align: center; */
+}
+#loginId{
+   padding:40px;
+}
+.col-md-8{
+    margin-top: 100px;
+    border:1px black;
+}

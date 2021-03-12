@@ -1,0 +1,32 @@
+#cardForHover:hover{    
+    opacity: 80%;
+}
+cssForAddCard{
+    visibility: hidden;
+}
+.card-body-add{
+    padding: 10px;
+}
+.addFacultyImage{
+    width: 300px;
+}
+.modifyFacultyImage{
+    width: 300px;
+}
+.removeFacultyImage{
+    width: 300px;
+}
+@media(max-width: 600px) {
+    .card-body-add{
+      
+    }
+    .addFacultyImage{
+        width: 80px;
+    }
+    .modifyFacultyImage{
+        width: 80px;
+    }
+    .removeFacultyImage{
+        width: 80px;
+    }
+}

@@ -1,0 +1,32 @@
+#cardForHover:hover{    
+    opacity: 80%;
+}
+cssForAddCard{
+    visibility: hidden;
+}
+.card-body-add{
+    padding: 10px;
+}
+.addStudentImage{
+    width: 300px;
+}
+.modifyStudentImage{
+    width: 300px;
+}
+.removeStudentImage{
+    width: 300px;
+}
+@media(max-width: 600px) {
+    .card-body-add{
+      
+    }
+    .addStudentImage{
+        width: 80px;
+    }
+    .modifyStudentImage{
+        width: 80px;
+    }
+    .removeStudentImage{
+        width: 80px;
+    }
+}

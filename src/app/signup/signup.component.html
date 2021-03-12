@@ -1,0 +1,119 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-7 advissColumn">
+            <h1 class="advissTitle">ADVISS </h1>
+            <p class="aboutAdviss">We are Providing Your Child's Personal Activity Via CCTV So Parent Can See Their Child's Activity in their Device via ADVISS</p>
+          
+          </div>
+          </div>
+    </div>
+  
+      <div class="col-md-8">
+        
+        <div class="row row-right">
+          <div class="form-group col-md-6 " > 
+            
+            <label for="school-name">School Name</label>    
+                
+                <input type="name" class="form-control"
+                id="school-name"
+                (input)="insideSchoolName($event)" 
+                placeholder="Enter your School Name">
+              
+            </div>
+  
+          <div class="form-group col-md-6">    
+             <label for="school-code">School Code</label> 
+          
+                <input type="name" class="form-control"
+                  id="school-code" 
+                  (input)="insideSchoolCode($event)"
+                  placeholder="Enter your School Code">
+          </div>
+                                
+          <div class="form-group col-md-12">    
+             <label for="Address">Address</label>
+             <input type="name" class="form-control" id="Address" placeholder="Enter your Address">
+          
+          </div>
+          <div class="form-group col-md-4">    
+             <label for="city">city</label>
+             <input type="name" class="form-control" id="city" placeholder="Enter your city">
+          </div>
+          
+          <div class="form-group col-md-4">    
+             <label for="pin">PINcode</label>
+             <input type="name" class="form-control" id="pin" placeholder="Enter your PINCODE">
+          </div>
+  
+          <div class="form-group col-md-4">    
+              <label for="cont-no">Contact No.</label>
+              <input type="tel" class="form-control" id="cont-no" placeholder="Enter your Contact Number">
+          </div>
+          
+          <div class="form-group col-md-6">    
+             <label for="aadhar">Aadhar No.</label>
+              <input type="name" class="form-control" id="aadhar" placeholder="Enter your Aadhar Number">
+          </div>
+  
+          <div class="form-check col-md-2 gender">
+              <label ></label>
+              <br>
+            <input class="form-check-input gender" type="radio" name="exampleRadios" id="Radios1" value="Male" checked>
+            <label class="form-check-label male" for="exampleRadios1">
+              Male
+            </label>
+                
+            <input class="form-check-input gender" type="radio" name="exampleRadios" id="Radios2" value="Female" checked>
+            <label class="form-check-label" for="exampleRadios2">
+              Female
+            </label>
+            </div>
+          
+            <div class="form-group col-md-3"> 
+              <label for="username">Username</label>
+              <input type="name" class="form-control" id="username" placeholder="create your username">           
+            </div>
+  
+          <div class="form-group col-md-6">    
+              <label for="pan">PAN No.</label>
+              <input type="name" class="form-control" id="pan" placeholder="Enter your PAN Number">
+          </div>
+          
+         
+  
+          <div class="form-group col-md-6">    
+             <label for="email">E-mail</label>
+             <input type="email" class="form-control" id="email" placeholder="Enter your E-mail ">     
+          </div>
+  
+          <div class="form-group col-md-4">    
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Create your Password">
+          </div>
+  
+          <div class="form-group col-md-4">    
+              <label for="confirm-password">Confirm Password</label>
+            <input type="password" class="form-control" id="confirm-password" placeholder="Re-enter your Password">
+          </div>
+              
+           
+  
+             <div class="form-check col-md-10 ">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Yes,I am agree with all the terms & conditions regarding this website</label>
+            </div>
+            
+             
+            <div class="form-check col-md-5 ">
+            <br>
+               <a href="#"><button type="submit" id="btn-signin"class="btn btn-primary">Sign  in</button></a>
+              </div>
+          <p *ngIf="schoolName && schoolCode === ''">Enter Details  Correctly</p>
+              
+            </div>
+      </div>
+    </div>
+  </div>
