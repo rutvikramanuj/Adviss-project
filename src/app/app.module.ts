@@ -23,6 +23,11 @@ import { AddFacultyComponent } from './faculty/add-faculty/add-faculty.component
 import { ModifyFacultyComponent } from './faculty/modify-faculty/modify-faculty.component';
 import { RemoveFacultyComponent } from './faculty/remove-faculty/remove-faculty.component';
 import { OtpComponent } from './faculty/add-faculty/otp/otp.component';
+import { ProChildComponent } from './profile/pro-child/pro-child.component';
+import { AppRoutingModule } from './app-routing.module';
+import { Page404Component } from './page404/page404.component';
+import { WelcomeSlideComponent } from './welcome-slide/welcome-slide.component';
+import { redColorDirective } from './Directives/redColor.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +48,10 @@ import { OtpComponent } from './faculty/add-faculty/otp/otp.component';
     ModifyFacultyComponent,
     RemoveFacultyComponent,
     OtpComponent,
-
+    ProChildComponent,
+    Page404Component,
+    WelcomeSlideComponent,
+    redColorDirective
   ],
   imports: [
     BrowserModule,
@@ -51,6 +59,7 @@ import { OtpComponent } from './faculty/add-faculty/otp/otp.component';
     NgxBootstrapIconsModule.pick(allIcons),
     BrowserAnimationsModule,
     MatSliderModule,
+    AppRoutingModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

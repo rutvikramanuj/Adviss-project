@@ -6,6 +6,10 @@
     /* width: 160%; */
     margin-left: 130px;
 }
+.btnModify{
+    margin-top: 30px;
+    width: 90px;
+}
 .row-right{
     margin-top: 10px;
     padding-left: 190px;;
@@ -15,4 +19,15 @@
 }
 #btn-student{
     margin-left:120px;
+}
+.fade-in{
+    animation: FadeIn 1s ease-in;
+}
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

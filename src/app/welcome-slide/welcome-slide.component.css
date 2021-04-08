@@ -1,0 +1,187 @@
+.welcomeADVISS{
+    animation: slideHeading 5s linear;
+    position: relative;
+    margin-top: 300px;
+    font-size: 150px;
+text-align: center;
+
+transition-duration: 2s;
+
+}
+@keyframes slideHeading {
+    0%{
+       
+       opacity: 0;
+     }
+    10%{
+       
+        opacity: 0.2;
+ }
+  
+    20%{
+   
+        
+
+        opacity: 0.4;
+       
+        
+}
+
+    30%{
+    opacity: 0.6;
+       
+   
+
+       
+    }
+   
+   
+   
+    40%{
+        opacity: 0.8;
+    
+       
+ }
+ 50%{
+    opacity: 1;
+   
+    
+
+       
+    }
+    60%{
+        opacity: 0.8;
+           
+       
+
+    
+           
+        }
+        70%{
+            opacity: 0.6;
+       
+               
+            
+        
+               
+            }
+            80%{
+                opacity: 0.4;
+       
+                   
+                
+            
+                   
+                }
+                90%{
+                    opacity: 0.1;
+        
+                       
+                    
+                
+                       
+                    }
+                    100%{
+                        opacity: 0;
+        
+                           
+                        
+                    
+                           
+                        }
+    
+}
+.advissParagraph{
+
+    animation: slideparagraph 5s linear;
+    position: relative;
+    font-size: 19px;
+    text-align: center;
+
+}
+@keyframes slideparagraph {
+   
+    0%{
+        
+        
+        opacity: 0;
+      
+    }
+    10%{
+       
+      
+
+        opacity: 0.2;
+
+        
+      
+    }
+  
+    20%{
+   
+       
+
+        opacity: 0.4;
+       
+        
+}
+
+    30%{
+    opacity: 0.6;
+       
+    
+
+       
+    }
+   
+   
+   
+    40%{
+        opacity: 0.8;
+    
+        
+ }
+ 50%{
+    opacity: 1;
+   
+    
+
+       
+    }
+    60%{
+        opacity: 0.8;
+           
+       
+    
+           
+        }
+        70%{
+            opacity: 0.6;
+              
+            
+        
+               
+            }
+            80%{
+                opacity: 0.4;
+                  
+                
+            
+                   
+                }
+                90%{
+                    opacity: 0.1;
+                       
+                    
+                
+                       
+                    }
+                    100%{
+                        opacity: 0;
+                          
+                        
+                    
+                           
+                        }
+    
+}

@@ -12,13 +12,51 @@
     margin: 300px 100px ;
 }
 .advissTitle{
-    
+    animation: fadeIn 2s ease-in;
     /* text-align: center; */
+    
 }
+.btnModify{
+    margin-top: 30px;
+    margin-left: 140px;
+    width: 90px;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
 #loginId{
    padding:40px;
 }
 .col-md-8{
     margin-top: 100px;
     border:1px black;
+}
+
+.aboutAdviss
+{   
+    animation: fadeIn 4s ease-in;
+ 
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
 }

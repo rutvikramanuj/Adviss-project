@@ -30,3 +30,42 @@ cssForAddCard{
         width: 80px;
     }
 }
+.btnModify{
+    width: 90px;
+}
+.cardAdd{
+animation: FadeIn 0.5s ease-in;
+}
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.cardModify{
+    animation: FadeIn 1s ease-in;
+}
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.cardRemove{
+    animation: FadeIn 1.5s ease-in;
+}
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+

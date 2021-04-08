@@ -35,27 +35,37 @@
                                 
           <div class="form-group col-md-12">    
              <label for="Address">Address</label>
-             <input type="name" class="form-control" id="Address" placeholder="Enter your Address">
+             <input type="name" class="form-control" id="Address" 
+             (input)="insideAddress($event)"
+             placeholder="Enter your Address">
           
           </div>
           <div class="form-group col-md-4">    
              <label for="city">city</label>
-             <input type="name" class="form-control" id="city" placeholder="Enter your city">
+             <input type="name" class="form-control" id="city" 
+             (input)="insideCity($event)"
+             placeholder="Enter your city">
           </div>
           
           <div class="form-group col-md-4">    
              <label for="pin">PINcode</label>
-             <input type="name" class="form-control" id="pin" placeholder="Enter your PINCODE">
+             <input type="number" class="form-control" id="pin" 
+            (input)=insidepinCode($event)
+             placeholder="Enter your PINCODE">
           </div>
   
           <div class="form-group col-md-4">    
               <label for="cont-no">Contact No.</label>
-              <input type="tel" class="form-control" id="cont-no" placeholder="Enter your Contact Number">
+              <input type="number" class="form-control" id="cont-no" 
+              (input)="insideContactNumber($event)"
+              placeholder="Enter your Contact Number">
           </div>
           
           <div class="form-group col-md-6">    
              <label for="aadhar">Aadhar No.</label>
-              <input type="name" class="form-control" id="aadhar" placeholder="Enter your Aadhar Number">
+              <input type="number" class="form-control" id="aadhar" 
+              (input)="insideAddharNumber($event)"
+              placeholder="Enter your Aadhar Number">
           </div>
   
           <div class="form-check col-md-2 gender">
@@ -74,46 +84,73 @@
           
             <div class="form-group col-md-3"> 
               <label for="username">Username</label>
-              <input type="name" class="form-control" id="username" placeholder="create your username">           
+              <input type="name" class="form-control" id="username"
+              (input)="insideUsername($event)"
+              placeholder="create your username">           
             </div>
   
           <div class="form-group col-md-6">    
               <label for="pan">PAN No.</label>
-              <input type="name" class="form-control" id="pan" placeholder="Enter your PAN Number">
+              <input type="number" class="form-control" id="pan"
+              (input)="insidePanNumber($event)"
+              placeholder="Enter your PAN Number">
           </div>
           
          
   
           <div class="form-group col-md-6">    
              <label for="email">E-mail</label>
-             <input type="email" class="form-control" id="email" placeholder="Enter your E-mail ">     
+             <input type="email" class="form-control" id="email" 
+             (input)="insideEmail($event)"
+             placeholder="Enter your E-mail ">     
           </div>
   
           <div class="form-group col-md-4">    
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Create your Password">
+            <input type="password" class="form-control" id="password"
+            (input)="insidePassword($event)"
+            placeholder="Create your Password">
           </div>
   
           <div class="form-group col-md-4">    
               <label for="confirm-password">Confirm Password</label>
-            <input type="password" class="form-control" id="confirm-password" placeholder="Re-enter your Password">
+            <input type="password" class="form-control" id="confirm-password"
+            (input)="insideConfirmPassword($event)"
+            placeholder="Re-enter your Password">
           </div>
               
            
   
              <div class="form-check col-md-10 ">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Yes,I am agree with all the terms & conditions regarding this website</label>
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+              <label class="form-check-label" for="exampleCheck1" >Yes,I am agree with all the terms & conditions regarding this website </label>
             </div>
             
              
             <div class="form-check col-md-5 ">
             <br>
-               <a href="#"><button type="submit" id="btn-signin"class="btn btn-primary">Sign  in</button></a>
+               <a href="#"><button type="submit" id="btn-signin"class="btn btn-primary btnModify"
+                (click)="signInButton()"
+                >Sign  in</button></a>
               </div>
-          <p *ngIf="schoolName && schoolCode === ''">Enter Details  Correctly</p>
+              <!-- <p *ngIf="schoolName && schoolCode === ''">Enter Details  Correctly</p> -->
+              <!-- <p *ngIf="msgCondition==='true'">password is not matching</p> -->
               
-            </div>
+            </div> 
       </div>
     </div>
   </div>
+
+   <!-- <p *ngFor="let item of details">
+    {{ item.schoolName }}
+    {{ item.schoolCode }}
+    {{ item.address }}
+    {{ item.city }}
+    {{ item.pinCode }}
+    {{ item.addharNumber }}
+    {{ item.panNumber }}
+    {{ item.username }}
+    {{ item.contactNumber }}
+    {{ item.email }}
+    {{ item.password }}
+    {{ item.confirmPassword }}</p> -->

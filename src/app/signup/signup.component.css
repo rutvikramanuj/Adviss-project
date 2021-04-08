@@ -10,13 +10,33 @@
     margin: 300px 100px ;
     
 }
+.btnModify{
+    
+    margin-top: 30px;
+    
+    width: 90px;
+}
 .mainAdviss{
     background-color:rgb(197, 197, 197);
 }
 .advissTitle{
-    
+    animation: fadeIn 2s ease-in;
     /* text-align: center; */
+    
 }
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
 .male{
     padding-right: 34px;
 }
@@ -25,4 +45,22 @@
 }
 .row-right{
     margin-top:100px;
+}
+.aboutAdviss
+{   
+    animation: fadeIn 4s ease-in;
+ 
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
 }

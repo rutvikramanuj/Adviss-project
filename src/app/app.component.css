@@ -1,6 +1,38 @@
 onLoadDiv{
     visibility: hidden;
+    
 }
+.divanimation{
+    animation: carousel 7.3s linear;
+
+}
+@keyframes carousel {
+    0%{
+opacity: 0;
+    }
+    50%{
+        opacity: 0;
+
+    }
+    70%{
+        opacity: 0;
+
+    }
+    80%{
+        opacity: 0.3;
+
+    }
+    90%{
+        opacity: 0.6;
+
+    }
+    100%{
+        opacity: 1;
+
+    }
+    
+}
+
 .carouselDiv{
     padding:50px;
     margin: auto;

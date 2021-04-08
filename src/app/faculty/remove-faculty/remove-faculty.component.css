@@ -9,6 +9,10 @@
    margin:25%;
     width: 100%;
 }
+.btnModify{
+    margin-top: 30px;
+    width: 90px;
+}
 .row-right{
     
     padding-left: 150px;
@@ -23,4 +27,15 @@
 }
 .modifyDetailsClipart{
     margin-left: 50px;
+}
+.fade-in{
+    animation: FadeIn 1s ease-in;
+}
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

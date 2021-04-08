@@ -9,7 +9,7 @@
         
          >
 
-        <div class="card card-body-add" >
+        <div class="card cardAdd card-body-add" >
             <img  
             src="/assets/images/addFacultyDetails(1).png" 
             alt="addFacultyDetailsLogo"
@@ -19,12 +19,12 @@
             <div class="card-body ">
                 <h5 class="card-title">Add Faculty Details</h5>
                 <p class="card-text">To Add Details Of A New Faculty</p>
-                <button class="btn btn-dark">add</button>
+                <button class="btn btn-dark btnModify">add</button>
             </div>
         </div>
         </div>
 
-        <div class="col-md-4 toVisibleFeature"
+        <div class="col-md-4 cardModify toVisibleFeature"
         (click)="modifyFacultyDiv()"
         [hidden]="toHideDiv"
          id="cardForHover" >
@@ -37,11 +37,11 @@
             <div class="card-body">
                 <h5 class="card-title">Modify</h5>
                 <p class="card-text">To Modify Existed Faculty Details</p>
-                <button class="btn btn-dark">Modify</button>
+                <button class="btn btn-dark btnModify">Modify</button>
             </div>
         </div>
     </div>
-        <div class="col-md-4 toVisibleFeature" 
+        <div class="col-md-4 cardRemove toVisibleFeature" 
         (click)="removeFacultyDiv()"
          id="cardForHover"
          [hidden]="toHideDiv"
@@ -54,7 +54,7 @@
             <div class="card-body ">
                 <h5 class="card-title">Remove</h5>
                 <p class="card-text">To Remove Faculty Details</p>
-                <button class="btn btn-dark">Remove</button>
+                <button class="btn btn-dark btnModify">Remove</button>
             </div>
         
     </div>

@@ -6,7 +6,22 @@
 #div_for_DEV{
    /* background-color: #d9d9d9;  */
     /* background-image:url("/assets/images/avipatel.png"); */
-    padding: 150px;
+    
+   
+}
+.IntroDiv{
+
+}
+.introduction{
+    text-align: center;
+    
+    
+}
+.about{
+    
+  
+}
+.about:hover{
    
 }
 .advissSpan{
@@ -18,22 +33,37 @@
 }
 #dev-row{
     margin-top:100px;
-    margin-left:300px;
+   
 }
 .devlopers{
     text-align: center;
         
 }
-.devImg{
-    
+.devImgRutvik{
+    position: relative;
+    left: 32%;
+    width:300px;
     text-align:center;
-    margin:20px;
+    transition: width 0.4s linear,
+}
+.devImgRutvik:hover {
+    width: 400px;
+}
+.devImgAvi{
+    position: relative;
+    left: 32%;
+    text-align:center;
+    width:300px;
+    transition: width 0.4s linear,
+    
+}
+.devImgAvi:hover {
+    width: 400px;
 }
 .hr{
     
     
    height:1px;
-   
    text-align:center;
    border-width:0;
    background-color:gray;
