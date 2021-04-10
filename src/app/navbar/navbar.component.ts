@@ -8,6 +8,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Output() featureSelected = new EventEmitter<string>();
+  isCollapsed = false;
   constructor() { } 
 
   ngOnInit(): void {

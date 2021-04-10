@@ -16,6 +16,188 @@
     
     width: 90px;
 }
+.btn-option1{
+    text-align:center;
+    width: 70px;
+    margin: 5px;
+    padding: 5px;
+    animation: option1 0.4s linear;
+}
+@keyframes option1 {
+    0%{
+opacity: 0;
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+.btn-option2{
+    text-align:center;
+    width: 70px;
+    margin: 5px;
+    padding: 5px;
+    animation: option2 0.8s linear;
+
+}
+@keyframes option2{
+    0%{
+opacity: 0;
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+.btn-option3{
+    text-align:center;
+    width: 70px;
+    margin: 5px;
+    padding: 5px;
+    animation: option3 1.2s linear;
+
+}
+@keyframes option3{
+    0%{
+opacity: 0;
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+.btn-option4{
+    text-align:center;
+    width: 70px;
+    margin: 5px;
+    padding: 5px;
+    animation: option3 1.2s linear;
+
+}
+@keyframes option4{
+    0%{
+opacity: 0;
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+.category-heading{
+    margin-top: 200px;
+}
+.studentSignInHeading{
+    padding-top:40px;
+    margin-top: 50px;
+    text-align:center;
+}
+
+/* =================================================================================== */
+.studentPng{
+    width: 420px;
+    animation: student 1s linear;
+    opacity: 0.9;
+    transition: width 0.3s linear;
+
+}
+.studentPng:hover{
+    opacity: 1;
+    width: 480px;
+
+}
+@keyframes student {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        
+    }
+    100%{
+        opacity: 0.9;
+        
+    }
+}
+.clerkPng{
+    width: 420px;
+    animation: clerk 1.5s linear;
+    opacity: 0.9;
+    transition: width 0.3s linear;
+
+}
+.clerkPng:hover{
+    opacity: 1;
+    width: 480px;
+
+}
+@keyframes clerk {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        
+    }
+    100%{
+        opacity: 0.9;
+        
+    }
+}
+.facultyPng{
+    width: 420px;
+    animation: faculty 2s linear;
+    opacity: 0.9;
+    transition: width 0.3s linear;
+}
+.facultyPng:hover{
+    opacity: 2;
+    width: 480px;
+}
+@keyframes faculty {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        
+    }
+    100%{
+        opacity: 0.9;
+        
+    }
+}
+.adminPng{
+    width: 400px;
+    animation: admin 2s linear;
+    opacity: 0.9;
+    transition: width 0.3s linear;
+}
+.adminPng:hover{
+    opacity: 1;
+    width: 440px;
+
+}
+@keyframes admin {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        
+    }
+    100%{
+        opacity: 0.9;
+        
+    }
+}
+/* =================================================================================== */
+
+.row-student{
+    padding: 10px;
+}
+.btn-stud:active{
+    color: ;
+}
 .mainAdviss{
     background-color:rgb(197, 197, 197);
 }

@@ -1,126 +1,99 @@
 <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3">
+        <img class="studentPng" *ngIf="studentPng" src="/assets/images/student (3).png" (click)="studentSelected()" alt="student">
+      </div>
+      <div class="col-md-3">
+        <img class="facultyPng" *ngIf="facultyPng" src="/assets/images/teacherPng1.png" (click)="facultySelected()"  alt="faculty">
+      </div>
+      <div class="col-md-3">
+        <img class="clerkPng" *ngIf="clerkPng" src="/assets/images/clerk2.png" (click)="clerkSelected()" alt="clerk">
+      </div>
+      <div class="col-md-3">
+        <img class="adminPng" *ngIf="adminPng" src="/assets/images/admin2.png" (click)="adminSelected()"  alt="faculty">
+      </div>
+      <div class="col-md-4" *ngIf="buttonConditionsLeftSide">
         <div class="row">
-          <div class="col-md-7 advissColumn">
+          <div class="col-md-8 advissColumn">
             <h1 class="advissTitle">ADVISS </h1>
             <p class="aboutAdviss">We are Providing Your Child's Personal Activity Via CCTV So Parent Can See Their Child's Activity in their Device via ADVISS</p>
-          
+            <button class="btn btn-danger btn-option1" (click)="studentSelected()" >Student</button>
+            <button class="btn btn-dark btn-option2" (click)="clerkSelected()">Clerk</button>
+            <button class="btn btn-danger btn-option3" (click)="facultySelected()">Faculty</button>
+            <button class="btn btn-dark btn-option4" (click)="adminSelected()">Admin</button>
           </div>
           </div>
     </div>
   
-      <div class="col-md-8">
-        
-        <div class="row row-right">
-          <div class="form-group col-md-6 " > 
+      <div class="col-md-5 offset-2" *ngIf="buttonConditionStudent">
+        <h1 class="studentSignInHeading">Enter Student Details</h1>
+        <div class="row row-right ">
+          
+          <div class="form-group col-md-6 row-student" > 
             
-            <label for="school-name">School Name</label>    
+            <label for="student-name">Student Name</label>    
                 
                 <input type="name" class="form-control"
-                id="school-name"
-                (input)="insideSchoolName($event)" 
-                placeholder="Enter your School Name">
+                id="student-name"
+             
+                placeholder="Enter Student Name">
               
             </div>
   
-          <div class="form-group col-md-6">    
-             <label for="school-code">School Code</label> 
+          <div class="form-group col-md-6 row-student">    
+             <label for="enroll">Enrollment no.</label> 
           
                 <input type="name" class="form-control"
-                  id="school-code" 
-                  (input)="insideSchoolCode($event)"
-                  placeholder="Enter your School Code">
+                  id="enroll" 
+                  
+                  placeholder="Enter your Enrollment number">
           </div>
                                 
-          <div class="form-group col-md-12">    
+          <div class="form-group col-md-8 row-student">    
              <label for="Address">Address</label>
              <input type="name" class="form-control" id="Address" 
              (input)="insideAddress($event)"
              placeholder="Enter your Address">
           
           </div>
-          <div class="form-group col-md-4">    
-             <label for="city">city</label>
-             <input type="name" class="form-control" id="city" 
-             (input)="insideCity($event)"
-             placeholder="Enter your city">
-          </div>
+         
           
-          <div class="form-group col-md-4">    
-             <label for="pin">PINcode</label>
-             <input type="number" class="form-control" id="pin" 
-            (input)=insidepinCode($event)
-             placeholder="Enter your PINCODE">
-          </div>
+          
   
-          <div class="form-group col-md-4">    
+          <div class="form-group col-md-4 row-student">    
               <label for="cont-no">Contact No.</label>
               <input type="number" class="form-control" id="cont-no" 
               (input)="insideContactNumber($event)"
               placeholder="Enter your Contact Number">
           </div>
           
-          <div class="form-group col-md-6">    
+          <div class="form-group col-md-4 row-student">    
              <label for="aadhar">Aadhar No.</label>
               <input type="number" class="form-control" id="aadhar" 
               (input)="insideAddharNumber($event)"
               placeholder="Enter your Aadhar Number">
           </div>
   
-          <div class="form-check col-md-2 gender">
-              <label ></label>
-              <br>
-            <input class="form-check-input gender" type="radio" name="exampleRadios" id="Radios1" value="Male" checked>
-            <label class="form-check-label male" for="exampleRadios1">
-              Male
-            </label>
-                
-            <input class="form-check-input gender" type="radio" name="exampleRadios" id="Radios2" value="Female" checked>
-            <label class="form-check-label" for="exampleRadios2">
-              Female
-            </label>
-            </div>
-          
-            <div class="form-group col-md-3"> 
-              <label for="username">Username</label>
-              <input type="name" class="form-control" id="username"
-              (input)="insideUsername($event)"
-              placeholder="create your username">           
-            </div>
-  
-          <div class="form-group col-md-6">    
-              <label for="pan">PAN No.</label>
-              <input type="number" class="form-control" id="pan"
-              (input)="insidePanNumber($event)"
-              placeholder="Enter your PAN Number">
-          </div>
-          
-         
-  
-          <div class="form-group col-md-6">    
+          <div class="form-group col-md-4 row-student">    
              <label for="email">E-mail</label>
              <input type="email" class="form-control" id="email" 
              (input)="insideEmail($event)"
              placeholder="Enter your E-mail ">     
           </div>
   
-          <div class="form-group col-md-4">    
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password"
-            (input)="insidePassword($event)"
-            placeholder="Create your Password">
-          </div>
-  
-          <div class="form-group col-md-4">    
-              <label for="confirm-password">Confirm Password</label>
-            <input type="password" class="form-control" id="confirm-password"
-            (input)="insideConfirmPassword($event)"
-            placeholder="Re-enter your Password">
-          </div>
-              
+        
+               <!-- Form code begins -->
+               
+                 <div class="form-group col-md-4 row-student"> <!-- Date input -->
+                   <label class="control-label" for="date">Date Of Birth</label>
+                   <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                 </div>
+                 
+                
+                <!-- Form code ends --> 
            
-  
+               
+            
              <div class="form-check col-md-10 ">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
               <label class="form-check-label" for="exampleCheck1" >Yes,I am agree with all the terms & conditions regarding this website </label>
@@ -138,7 +111,288 @@
               
             </div> 
       </div>
+<!-- ----------------------------------------------------------------------------------------------------- -->
+
+<div class="col-md-5 offset-2" *ngIf="buttonConditionClerk">
+  <h1 class="studentSignInHeading">Enter Clerk Details</h1>
+  <div class="row row-right ">
+    
+    <div class="form-group col-md-6  row-student" > 
+      
+      <label for="clerk-name">Clerk Name</label>    
+          
+          <input type="name" class="form-control"
+          id="clerk-name"
+       
+          placeholder="Enter Clerk Name">
+        
+      </div>
+
+                          
+    <div class="form-group col-md-6 row-student">    
+       <label for="Address">Address</label>
+       <input type="name" class="form-control" id="Address" 
+       (input)="insideAddress($event)"
+       placeholder="Enter your Address">
+    
     </div>
+   
+    
+    
+
+    <div class="form-group col-md-6 row-student">    
+        <label for="cont-no">Contact No.</label>
+        <input type="number" class="form-control" id="cont-no" 
+        (input)="insideContactNumber($event)"
+        placeholder="Enter your Contact Number">
+    </div>
+    
+    <div class="form-group col-md-6 row-student">    
+       <label for="aadhar">Aadhar No.</label>
+        <input type="number" class="form-control" id="aadhar" 
+        (input)="insideAddharNumber($event)"
+        placeholder="Enter your Aadhar Number">
+    </div>
+
+    <div class="form-group col-md-6 row-student">    
+       <label for="email">E-mail</label>
+       <input type="email" class="form-control" id="email" 
+       (input)="insideEmail($event)"
+       placeholder="Enter your E-mail ">     
+    </div>
+
+  
+         <!-- Form code begins -->
+         
+           <div class="form-group col-md-6 row-student"> <!-- Date input -->
+             <label class="control-label" for="date">Date Of Birth</label>
+             <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+           </div>
+           
+          
+          <!-- Form code ends --> 
+     
+         
+      
+       <div class="form-check col-md-10 ">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+        <label class="form-check-label" for="exampleCheck1" >Yes,I am agree with all the terms & conditions regarding this website </label>
+      </div>
+      
+       
+      <div class="form-check col-md-5 ">
+      <br>
+         <a href="#"><button type="submit" id="btn-signin"class="btn btn-primary btnModify"
+          (click)="signInButton()"
+          >Sign  in</button></a>
+        </div>
+        <!-- <p *ngIf="schoolName && schoolCode === ''">Enter Details  Correctly</p> -->
+        <!-- <p *ngIf="msgCondition==='true'">password is not matching</p> -->
+        
+      </div> 
+</div>
+
+
+
+
+
+<!-- ====================================================================================================== -->
+
+<div class="col-md-5 offset-2" *ngIf="buttonConditionFaculty">
+  <h1 class="studentSignInHeading">Enter Faculty Details</h1>
+  <div class="row row-right ">
+    
+    <div class="form-group col-md-6  row-student" > 
+      
+      <label for="faculty-name">Faculty Name</label>    
+          
+          <input type="name" class="form-control"
+          id="faculty-name"
+       
+          placeholder="Enter Faculty Name">
+        
+      </div>
+
+                          
+    <div class="form-group col-md-6 row-student">    
+       <label for="Address">Address</label>
+       <input type="name" class="form-control" id="Address" 
+       (input)="insideAddress($event)"
+       placeholder="Enter your Address">
+    
+    </div>
+   
+    
+    
+
+    <div class="form-group col-md-6 row-student">    
+        <label for="cont-no">Contact No.</label>
+        <input type="number" class="form-control" id="cont-no" 
+        (input)="insideContactNumber($event)"
+        placeholder="Enter your Contact Number">
+    </div>
+    
+    <div class="form-group col-md-6 row-student">    
+       <label for="aadhar">Aadhar No.</label>
+        <input type="number" class="form-control" id="aadhar" 
+        (input)="insideAddharNumber($event)"
+        placeholder="Enter your Aadhar Number">
+    </div>
+
+    <div class="form-group col-md-6 row-student">    
+       <label for="email">E-mail</label>
+       <input type="email" class="form-control" id="email" 
+       (input)="insideEmail($event)"
+       placeholder="Enter your E-mail ">     
+    </div>
+
+  
+         <!-- Form code begins -->
+         
+           <div class="form-group col-md-6 row-student"> <!-- Date input -->
+             <label class="control-label" for="date">Date Of Birth</label>
+             <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+           </div>
+           
+          
+          <!-- Form code ends --> 
+     
+         
+      
+       <div class="form-check col-md-10 ">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+        <label class="form-check-label" for="exampleCheck1" >Yes,I am agree with all the terms & conditions regarding this website </label>
+      </div>
+      
+       
+      <div class="form-check col-md-5 ">
+      <br>
+         <a href="#"><button type="submit" id="btn-signin"class="btn btn-primary btnModify"
+          (click)="signInButton()"
+          >Sign  in</button></a>
+        </div>
+        <!-- <p *ngIf="schoolName && schoolCode === ''">Enter Details  Correctly</p> -->
+        <!-- <p *ngIf="msgCondition==='true'">password is not matching</p> -->
+        
+      </div> 
+</div>
+
+<!-- ================================================================================= -->
+
+
+<div class="col-md-5 offset-2" *ngIf="buttonConditionAdmin">
+  <h1 class="studentSignInHeading">Enter Admin Details</h1>
+  <div class="row row-right ">
+    
+    <div class="form-group col-md-6  row-student" > 
+      
+      <label for="admin-name">Admin Name</label>    
+          
+          <input type="name" class="form-control"
+          id="admin-name"
+       
+          placeholder="Enter Admin Name">
+        
+      </div>
+
+                          
+    <div class="form-group col-md-6 row-student">    
+       <label for="Address">Address</label>
+       <input type="name" class="form-control" id="Address" 
+       (input)="insideAddress($event)"
+       placeholder="Enter your Address">
+    
+    </div>
+   
+    
+    <div class="form-group col-md-6 row-student">    
+      <label for="pin">Pin code.</label>
+      <input type="number" class="form-control" id="pin" 
+      
+      placeholder="Enter Pin Code">
+  </div>
+
+    <div class="form-group col-md-6 row-student">    
+        <label for="cont-no">Contact No.</label>
+        <input type="number" class="form-control" id="cont-no" 
+        (input)="insideContactNumber($event)"
+        placeholder="Enter your Contact Number">
+    </div>
+    
+    <div class="form-group col-md-6  row-student" > 
+      
+      <label for="principal-name">Principal Name</label>    
+          
+          <input type="name" class="form-control"
+          id="principal-name"
+       
+          placeholder="Enter Principal Name">
+        
+      </div>
+      <div class="form-group col-md-6 row-student">    
+        <label for="Pcont-no">Principal Contact No.</label>
+        <input type="number" class="form-control" id="Pcont-no" 
+        (input)="insideContactNumber($event)"
+        placeholder="Enter Principal Contact Number">
+    </div>
+
+    <div class="form-group col-md-6 row-student">    
+       <label for="aadhar">Aadhar No.</label>
+        <input type="number" class="form-control" id="aadhar" 
+        (input)="insideAddharNumber($event)"
+        placeholder="Enter your Aadhar Number">
+    </div>
+
+    <div class="form-group col-md-6 row-student">    
+       <label for="email">E-mail</label>
+       <input type="email" class="form-control" id="email" 
+       (input)="insideEmail($event)"
+       placeholder="Enter your E-mail ">     
+    </div>
+
+    <div class="form-group col-md-6  row-student" > 
+      
+      <label for="username">Username</label>    
+          
+          <input type="name" class="form-control"
+          id="username"
+       
+          placeholder="Enter Username">
+        
+      </div>
+  
+      <div class="form-group col-md-6  row-student" > 
+      
+        <label for="password">Password</label>    
+            
+            <input type="password" class="form-control"
+            id="password"
+         
+            placeholder="Enter Password">
+          
+        </div>
+        
+      
+       <div class="form-check col-md-10 ">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+        <label class="form-check-label" for="exampleCheck1" >Yes,I am agree with all the terms & conditions regarding this website </label>
+      </div>
+      
+       
+      <div class="form-check col-md-5 ">
+      <br>
+         <a href="#"><button type="submit" id="btn-signin"class="btn btn-primary btnModify"
+          (click)="signInButton()"
+          >Sign  in</button></a>
+        </div>
+        <!-- <p *ngIf="schoolName && schoolCode === ''">Enter Details  Correctly</p> -->
+        <!-- <p *ngIf="msgCondition==='true'">password is not matching</p> -->
+        
+      </div> 
+</div>
+
+
+</div>
   </div>
 
    <!-- <p *ngFor="let item of details">

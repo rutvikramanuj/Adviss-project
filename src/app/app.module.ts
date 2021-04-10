@@ -28,6 +28,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { Page404Component } from './page404/page404.component';
 import { WelcomeSlideComponent } from './welcome-slide/welcome-slide.component';
 import { redColorDirective } from './Directives/redColor.directive';
+import { DropdownDirective } from './dropdown.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +52,8 @@ import { redColorDirective } from './Directives/redColor.directive';
     ProChildComponent,
     Page404Component,
     WelcomeSlideComponent,
-    redColorDirective
+    redColorDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

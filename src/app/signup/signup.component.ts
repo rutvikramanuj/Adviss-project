@@ -8,7 +8,16 @@ import { SingupDataService } from '../singup-data.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  buttonConditionStudent = false;
+  buttonConditionFaculty = false;
+  buttonConditionClerk = false;
+  buttonConditionAdmin = false;
   
+  studentPng = false;
+  clerkPng = false;
+  facultyPng = false;
+  adminPng = false;
+  buttonConditionsLeftSide = false;
   schoolName='';
   schoolCode='';
   address='';
@@ -47,8 +56,66 @@ details:Array<any>=[];
    }
 
   ngOnInit(): void {
+    this.studentPng = true;
+    this.clerkPng = true;
+    this.facultyPng = true;
+    this.adminPng = true;
   }
 
+  studentSelected(){
+    this.studentPng = false;
+    this.clerkPng = false;
+    this.facultyPng = false;
+    this.adminPng = false;
+
+    this.buttonConditionsLeftSide = true;
+    this.buttonConditionStudent = true;
+    this.buttonConditionClerk = false;
+    this.buttonConditionFaculty = false;
+    this.buttonConditionAdmin = false;
+
+  }
+  clerkSelected(){
+    this.studentPng = false;
+    this.clerkPng = false;
+    this.facultyPng = false;
+    this.adminPng = false;
+
+    this.buttonConditionsLeftSide = true;
+
+    this.buttonConditionStudent = false;
+    this.buttonConditionClerk = true;
+    this.buttonConditionFaculty = false;
+    this.buttonConditionAdmin = false;
+
+  }
+  adminSelected(){
+    this.studentPng = false;
+    this.clerkPng = false;
+    this.facultyPng = false;
+    this.adminPng = false;
+
+    this.buttonConditionsLeftSide = true;
+
+    this.buttonConditionStudent = false;
+    this.buttonConditionClerk = false;
+    this.buttonConditionFaculty = false;
+    this.buttonConditionAdmin = true;
+
+  }
+  facultySelected(){
+    this.studentPng = false;
+    this.clerkPng = false;
+    this.facultyPng = false;
+    this.adminPng = false;
+
+    this.buttonConditionsLeftSide = true;
+
+    this.buttonConditionStudent = false;
+    this.buttonConditionClerk = false;
+    this.buttonConditionFaculty = true;
+    this.buttonConditionAdmin = false;
+  }
   insideSchoolName(event:Event){
     this.schoolName =(<HTMLInputElement>event.target).value;
    }
